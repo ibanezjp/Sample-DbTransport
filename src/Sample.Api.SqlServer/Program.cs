@@ -55,7 +55,7 @@ builder.Services.AddMassTransit(x =>
         .EntityFrameworkRepository(r =>
         {
             r.ExistingDbContext<SampleDbContext>();
-            r.UsePostgres();
+            r.UseSqlServer();
         });
 
     x.SetKebabCaseEndpointNameFormatter();
