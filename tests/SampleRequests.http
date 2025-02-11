@@ -12,7 +12,7 @@ Content-Type: application/json
   "raceId": "R-456"
 }
 
-> {% client.global.set("submissionId", response.body.json.submissionId); %}
+> {% client.global.set("submissionId", response.body.submissionId); %}
 
 ### Get Registration
 GET http://localhost:5010/Registration/{{submissionId}}
